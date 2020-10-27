@@ -40,7 +40,7 @@ router.post("/login-super-admin", async (req, res) => {
   await userLogin(req.body, "superadmin", res);
 });
 // Profile Route
-router.get("/profile", userAuth, async (req, res) => {
+router.get("/dev", userAuth, async (req, res) => {
   return res.json(serializeUser(req.user));
 });
 
